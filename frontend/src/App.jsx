@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Login from "./Login";
 import { api } from "./api";
+import Dashboard from "./Dashboard";
 
 export default function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
@@ -28,7 +29,7 @@ export default function App() {
         <button className="ghost" onClick={logout}>Log out</button>
       </header>
       <h2>Welcome{user ? `, ${user.name}` : ""}</h2>
-      <p className="muted">Your applications will appear here.</p>
+      <Dashboard />
     </div>
   );
 }
