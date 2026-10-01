@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 venv/
 node_modules/
 __pycache__/
 tracker.db
 .env
+=======
+venv/
+node_modules/
+__pycache__/
+tracker.db
+.env
+>>>>>>> bb62315e3fd9ae5ece750ef8c7545f172476df48
 dist/
