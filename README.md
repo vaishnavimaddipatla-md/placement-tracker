@@ -113,7 +113,7 @@ Open `http://localhost:5173` in your browser.
 
 ## Screenshots
 
-![Uploading Screenshot 2026-10-01 171424.png…]()
+"C:\Users\Likithasri\OneDrive\Pictures\Screenshots\Screenshot 2026-10-01 171424.png"
 
 ## Roadmap
 
