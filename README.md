@@ -111,10 +111,10 @@ Open `http://localhost:5173` in your browser.
 - Every application query is filtered by the logged-in user's id, so users cannot access each other's data.
 - The JWT secret in `auth.py` is a development placeholder. Move it to an environment variable before deploying.
 
-## Screenshots
+## screenshots
+   ![Dashboard](screenshots/dashboard.png)
+<img width="1662" height="922" alt="Screenshot 2026-10-01 203444" src="https://github.com/user-attachments/assets/49b5edbe-ac5e-4fc4-8463-d352cb818942" />
 
-
-<img width="1605" height="367" alt="Screenshot 2026-10-01 171424" src="https://github.com/user-attachments/assets/03a1db6e-fd49-4874-89bf-a6321ecfa336" />
 
 
 ## Roadmap
