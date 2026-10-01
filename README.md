@@ -113,7 +113,9 @@ Open `http://localhost:5173` in your browser.
 
 ## Screenshots
 
-"C:\Users\Likithasri\OneDrive\Pictures\Screenshots\Screenshot 2026-10-01 171424.png"
+
+<img width="1605" height="367" alt="Screenshot 2026-10-01 171424" src="https://github.com/user-attachments/assets/03a1db6e-fd49-4874-89bf-a6321ecfa336" />
+
 
 ## Roadmap
 
