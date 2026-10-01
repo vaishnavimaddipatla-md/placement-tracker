@@ -113,7 +113,6 @@ Open `http://localhost:5173` in your browser.
 
 ## Screenshots
 
-_Add screenshots of the login page, applications list and dashboard here._
 
 ## Roadmap
 
@@ -131,4 +130,5 @@ _Add screenshots of the login page, applications list and dashboard here._
 ## Author
 
 **Your Name**
-GitHub: your-username
+Vaishnavi Maddipatla
+
