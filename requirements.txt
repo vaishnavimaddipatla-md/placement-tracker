@@ -3,4 +3,4 @@ uvicorn
 sqlalchemy
 bcrypt
 pyjwt
-email-validator
+email-validatorok
