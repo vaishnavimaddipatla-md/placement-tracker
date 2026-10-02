@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "./api";
+import Analytics from "./Analytics";
 
 const STATUSES = ["Wishlist", "Applied", "Online Test", "Interview", "Offer", "Rejected"];
 const EMPTY_FORM = { company: "", role: "", location: "", status: "Wishlist" };
@@ -59,6 +60,7 @@ export default function Dashboard() {
 
   return (
     <div>
+      <Analytics refresh={apps} />
       <form className="panel add-form" onSubmit={addApplication}>
         <input
           placeholder="Company"
