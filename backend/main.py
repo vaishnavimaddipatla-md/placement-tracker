@@ -2,6 +2,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from applications import router as applications_router
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
+from analytics import router as analytics_router
 
 import models
 import schemas
@@ -25,6 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(applications_router)
+app.include_router(analytics_router)
 
 
 
