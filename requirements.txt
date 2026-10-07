@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-fastapi
-uvicorn
-sqlalchemy
-bcrypt
-pyjwt
-email-validatorok
-=======
 fastapi
 uvicorn
 sqlalchemy
