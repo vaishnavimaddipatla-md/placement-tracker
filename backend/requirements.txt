@@ -6,3 +6,4 @@ pyjwt
 email-validator
 pytest
 httpx
+python-dotenv

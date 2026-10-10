@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from datetime import datetime, timedelta, timezone
 
 import bcrypt
@@ -9,7 +11,11 @@ from sqlalchemy.orm import Session
 import models
 from database import SessionLocal
 
-SECRET_KEY = "change-this-later-to-a-long-random-string"
+load_dotenv()
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+if not SECRET_KEY:
+    raise RuntimeError("SECRET_KEY environment variable is not set")
 ALGORITHM = "HS256"
 TOKEN_EXPIRE_MINUTES = 60 * 24
 
