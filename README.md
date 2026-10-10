@@ -1,6 +1,10 @@
 
 # Placement Tracker
 
+**Live demo:** https://placement-tracker-delta-ruby.vercel.app
+
+> The backend runs on a free Render instance, so the first request after a period of inactivity can take about 30 seconds to wake up.
+
 A full-stack web application that helps students track job applications across every stage of the hiring process: Wishlist, Applied, Online Test, Interview, Offer and Rejected.
 
 Built with a FastAPI backend, a React frontend and secure JWT authentication.
@@ -128,7 +132,7 @@ Open `http://localhost:5173` in your browser.
 - [x] Analytics dashboard
 - [ ] Email reminders
 - [x] Automated tests  (pytest)
-- [ ] Deployment with PostgreSQL
+- [x] Deployment with PostgreSQL
 
 
    ## Running tests
