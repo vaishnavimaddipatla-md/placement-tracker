@@ -127,9 +127,18 @@ Open `http://localhost:5173` in your browser.
 - [ ] Pipeline board
 - [x] Analytics dashboard
 - [ ] Email reminders
-- [ ] Automated tests (pytest)
+- [x] Automated tests  (pytest)
 - [ ] Deployment with PostgreSQL
 
+
+   ## Running tests
+
+   cd backend
+   venv\Scripts\activate
+   pytest -v
+
+
+   
 ## Author
 
 **Your Name**

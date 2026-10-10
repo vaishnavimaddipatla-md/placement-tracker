@@ -4,6 +4,7 @@ node_modules/
 __pycache__/
 tracker.db
 .env
+.pytest_cache/
 =======
 venv/
 node_modules/
