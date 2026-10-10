@@ -1,3 +1,4 @@
+import os
 from fastapi.middleware.cors import CORSMiddleware
 from applications import router as applications_router
 from fastapi import Depends, FastAPI, HTTPException
@@ -18,9 +19,14 @@ from database import Base, engine
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Placement Tracker API")
+origins = ["http://localhost:5173", "http://127.0.0.1:5173"]
+frontend_url = os.environ.get("FRONTEND_URL")
+if frontend_url:
+    origins.append(frontend_url.rstrip("/"))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

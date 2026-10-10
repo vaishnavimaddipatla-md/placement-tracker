@@ -110,7 +110,7 @@ Open `http://localhost:5173` in your browser.
 
 - Passwords are stored only as bcrypt hashes, never as plain text.
 - Every application query is filtered by the logged-in user's id, so users cannot access each other's data.
-- The JWT secret in `auth.py` is a development placeholder. Move it to an environment variable before deploying.
+- The JWT secret is read from the `SECRET_KEY` environment variable and is never committed to the repository.
 
 ## Screenshots
 <img width="1662" height="922" alt="Screenshot 2026-10-01 203444" src="https://github.com/user-attachments/assets/49b5edbe-ac5e-4fc4-8463-d352cb818942" />
