@@ -5,7 +5,7 @@ A full-stack web application that helps students track job applications across e
 
 Built with a FastAPI backend, a React frontend and secure JWT authentication.
 
-> **Status:** backend API and login are complete. The applications dashboard, pipeline board, analytics and deployment are in progress (see the roadmap below).
+> **Status:** backend API, login, applications dashboard and analytics are complete. The pipeline board, tests and deployment are in progress (see the roadmap below).
 
 ## Features
 
@@ -14,13 +14,14 @@ Built with a FastAPI backend, a React frontend and secure JWT authentication.
 - Protected REST API where every user can only see and edit their own data
 - Full CRUD for job applications (company, role, location, link, notes, status)
 - Search by company or role, filter by status, and pagination
-- Stage history: every status change is recorded, which will power the analytics
+- Stage history: every status change is recorded, which powers the analytics
 - React login and signup page connected to the API, with token-based sessions
+- Applications dashboard: add, list, search, filter by status, change status and delete
+- Analytics dashboard with summary cards and a chart of applications per stage
 
 **In progress**
-- Applications list and add/edit form in the React UI
 - Pipeline board to move applications between stages
-- Analytics dashboard (applications per stage, response rate)
+- Edit form for notes, dates and job links
 - Email reminders for interviews and follow-ups
 - Automated tests and live deployment
 
@@ -111,8 +112,7 @@ Open `http://localhost:5173` in your browser.
 - Every application query is filtered by the logged-in user's id, so users cannot access each other's data.
 - The JWT secret in `auth.py` is a development placeholder. Move it to an environment variable before deploying.
 
-## screenshots
-   ![Dashboard](screenshots/dashboard.png)
+## Screenshots
 <img width="1662" height="922" alt="Screenshot 2026-10-01 203444" src="https://github.com/user-attachments/assets/49b5edbe-ac5e-4fc4-8463-d352cb818942" />
 
 
@@ -123,9 +123,9 @@ Open `http://localhost:5173` in your browser.
 - [x] Applications API with search, filters and pagination
 - [x] Stage history tracking
 - [x] React login and signup
-- [ ] Applications list and add/edit form
+- [x] Applications list, add form, search and status change
 - [ ] Pipeline board
-- [ ] Analytics dashboard
+- [x] Analytics dashboard
 - [ ] Email reminders
 - [ ] Automated tests (pytest)
 - [ ] Deployment with PostgreSQL
